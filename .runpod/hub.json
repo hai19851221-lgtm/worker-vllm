@@ -1,6 +1,6 @@
 {
   "title": "vLLM",
-  "description": "Deploy OpenAI-Compatible Blazing-Fast LLM Endpoints powered by vLLM",
+  "description": "部署由 vLLM 驱动、兼容 OpenAI 的超高速 LLM 端点",
   "type": "serverless",
   "category": "language",
   "iconUrl": "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/vllm-color.png",
@@ -22,27 +22,27 @@
       {
         "key": "MODEL_NAME",
         "input": {
-          "name": "Model",
+          "name": "模型",
           "type": "huggingface",
-          "description": "Hugging Face model name",
+          "description": "Hugging Face 模型名称",
           "required": true
         }
       },
       {
         "key": "TOKENIZER",
         "input": {
-          "name": "Tokenizer",
+          "name": "分词器",
           "type": "string",
-          "description": "Name or path of the Hugging Face tokenizer to use.",
+          "description": "要使用的 Hugging Face 分词器名称或路径。",
           "advanced": true
         }
       },
       {
         "key": "TOKENIZER_MODE",
         "input": {
-          "name": "Tokenizer Mode",
+          "name": "分词器模式",
           "type": "string",
-          "description": "The tokenizer mode.",
+          "description": "分词器模式。",
           "options": [
             {
               "label": "auto",
@@ -60,9 +60,9 @@
       {
         "key": "SKIP_TOKENIZER_INIT",
         "input": {
-          "name": "Skip Tokenizer Init",
+          "name": "跳过分词器初始化",
           "type": "boolean",
-          "description": "Skip initialization of tokenizer and detokenizer.",
+          "description": "跳过分词器和反分词器的初始化。",
           "default": false,
           "advanced": true
         }
@@ -70,9 +70,9 @@
       {
         "key": "TRUST_REMOTE_CODE",
         "input": {
-          "name": "Trust Remote Code",
+          "name": "信任远程代码",
           "type": "boolean",
-          "description": "Trust remote code from Hugging Face.",
+          "description": "信任来自 Hugging Face 的远程代码。",
           "default": false,
           "advanced": true
         }
@@ -80,18 +80,18 @@
       {
         "key": "DOWNLOAD_DIR",
         "input": {
-          "name": "Download Directory",
+          "name": "下载目录",
           "type": "string",
-          "description": "Directory to download and load the weights.",
+          "description": "下载并加载权重的目录。",
           "advanced": true
         }
       },
       {
         "key": "LOAD_FORMAT",
         "input": {
-          "name": "Load Format",
+          "name": "加载格式",
           "type": "string",
-          "description": "The format of the model weights to load.",
+          "description": "要加载的模型权重格式。",
           "options": [
             {
               "label": "auto",
@@ -128,9 +128,9 @@
       {
         "key": "DTYPE",
         "input": {
-          "name": "Data Type",
+          "name": "数据类型",
           "type": "string",
-          "description": "Data type for model weights and activations.",
+          "description": "模型权重和激活值的数据类型。",
           "options": [
             {
               "label": "auto",
@@ -164,9 +164,9 @@
       {
         "key": "KV_CACHE_DTYPE",
         "input": {
-          "name": "KV Cache Data Type",
+          "name": "KV 缓存数据类型",
           "type": "string",
-          "description": "Data type for KV cache storage.",
+          "description": "KV 缓存存储的数据类型。",
           "options": [
             {
               "label": "auto",
@@ -184,9 +184,9 @@
       {
         "key": "MAX_MODEL_LEN",
         "input": {
-          "name": "Max Model Length",
+          "name": "最大模型长度",
           "type": "number",
-          "description": "Model context length.",
+          "description": "模型上下文长度。",
           "default": null,
           "advanced": true
         }
@@ -194,9 +194,9 @@
       {
         "key": "DISTRIBUTED_EXECUTOR_BACKEND",
         "input": {
-          "name": "Distributed Executor Backend",
+          "name": "分布式执行后端",
           "type": "string",
-          "description": "Backend to use for distributed serving.",
+          "description": "用于分布式服务的后端。",
           "options": [
             {
               "label": "ray",
@@ -214,9 +214,9 @@
       {
         "key": "RAY_WORKERS_USE_NSIGHT",
         "input": {
-          "name": "Ray Workers Use Nsight",
+          "name": "Ray Worker 使用 Nsight",
           "type": "boolean",
-          "description": "If specified, use nsight to profile Ray workers.",
+          "description": "如启用，则使用 Nsight 分析 Ray worker。",
           "default": false,
           "advanced": true
         }
